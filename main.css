@@ -142,7 +142,6 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height:55vh;
     margin: 15px 15px 0px 15px;
     padding: 15px 15px 15px 15px;
 }
@@ -238,7 +237,7 @@ h2 {
 }
 
 /* DESKTOP AND TABLET SPECIFIC STYLE */
-@media screen and (min-width: 799px) {
+@media screen and (min-width: 750px) {
     h1{
         font-size: 50px;
     }
@@ -246,8 +245,8 @@ h2 {
         top: -10vh;
     }
     #header{
-        margin-left: 12vw;
-        max-width: 900px;
+        margin-left: 0;
+        width: 100vw;
         padding: 0;
         flex-direction: row;
         justify-content: center;
@@ -256,6 +255,7 @@ h2 {
         display: none;
     }
     #rightIcons{
+        right: 1vw;
         display: flex;
     }
     .vl{
@@ -317,12 +317,9 @@ h2 {
         flex-direction: row;
     }
     .projectArchive , .projectSelect{
-        width: 32vw;
+        width: 39vw;
         margin: 20px 20px 20px 20px;
         padding: 20px 20px 10px 20px;
-    }
-    .projectSelect{
-        height: 32vh;
     }
     .projecttag {
         font-size: 14px;
@@ -338,6 +335,20 @@ h2 {
         font-size: 25px;
     }
 }
+
+@media screen and (min-width: 1400px) {
+    #header{
+        margin-left: 12vw;
+        max-width: 900px;
+    }
+    .projectArchive , .projectSelect{
+        width: 32vw;
+    }
+    #rightIcons{
+        right: 2vw;
+    }
+}
+
 
 
 
