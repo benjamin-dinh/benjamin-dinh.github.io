@@ -1,14 +1,14 @@
 window.addEventListener('scroll',(e)=>{
-    const nav = document.querySelector('#navbarContainer');
-    const name = document.querySelector('#navbarName');
+    const nav = document.querySelector('#navigationContainer');
+    const name = document.querySelector('#navigationName');
     const arrow = document.querySelector('.arrow');
     if(window.pageYOffset>0){
-      nav.classList.add("floatingNav");
+      nav.classList.add("navigationShadow");
       name.style.color = "rgba(0,0,0,.5)";
       arrow.style.display = 'none';
     }else{
-      nav.classList.remove("floatingNav");
-      name.style.color = "rgb(190, 2, 2)";
+      nav.classList.remove("navigationShadow");
+      name.style.color = "#333";
       arrow.style.display = 'block';
     }
 });

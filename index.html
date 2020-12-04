@@ -8,35 +8,31 @@
         
 		<!-- style -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
-
 		<link rel="stylesheet" href="main.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		
-		<script src="script.js"></script>
-
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+ 
+		
 		<title>Benjamin Dinh</title>
 		<link rel="icon" href="assets/favicon.png">
     </head>
     
 	<body>
-		<div id='navbarContainer'>
-			<nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light" id="mainNav">
-				<a class="navbar-brand js-scroll-trigger" id="navbarName" href="#header">Benjamin Dinh</a>
+		<div id='navigationContainer'>
+			<nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light">
+				<a class="navbar-brand js-scroll-trigger" id="navigationName" href="#header">Benjamin Dinh</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarResponsive">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item">
-							<a class="nav-link js-scroll-trigger" href="#about">About</a>
+							<a class="nav-link js-scroll-trigger" href="/about">About</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+							<a class="nav-link js-scroll-trigger" href="#anchor">Work</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link js-scroll-trigger categorytag" href="assets/BenjaminDinhResume.pdf">Resume</a>
@@ -45,7 +41,7 @@
 				</div>
 			</nav>
 		</div>
-		<div id="righticons">
+		<div id="rightIcons">
 			<a href="https://www.linkedin.com/in/benjamin-dinh/" class="fa fa-linkedin"></a>
 			<a href="https://github.com/benjamin-dinh" class="fa fa-github"></a>
 			<a href="https://www.behance.net/benjamin-dinh" class="fa fa-behance"></a>
@@ -54,39 +50,244 @@
 		</div>
 		
 		<section id="header">
-			<div id="intro" class="flyin">
+			<div id="headerText" class="flyin">
 			  	<h1>Hi, my name is 
 				  <b id="name">Benjamin</b>
 				  <br> I am a software developer.
 				</h1>
+				<a class="categorytag" id="headertag" href="mailto:benjamindinh909@gmail.com">Get In Touch</a>
 			</div>
 		</section>
-		<div class="arrow bounce">
-			<a href = "#about" class="fa fa-angle-down fa-3x"></a>
+		<div class="arrow bounce" id="anchor">
+			<a href = "#anchor" class="fa fa-angle-down fa-3x"></a>
 		</div>
-		<!-- <section id="about">
-			<div id="aboutContainer">
-				<h1>About Me
-				<b id="name">Benjamin</b>
-				<br> I am a software developer.
-			  </h1>
-		  </div>
-		</section> -->
+		<section id="projects">
+			<p id = "projectSectionTitle">RECENTS</p>
+			<div id="projectContainer">
+				<div class="row">
+					<div class = projectSelect>
+						<div>
+							<h2>Tweet Sentiment Analysis</h2>
+							<p class="subtitle_bold">An NLP model that classifies tweets based on polarity of opinion</p>
+							<p class="subtitle_date">DECEMBER 2020</p>
+							<p class="subtitle">Cleaned, normalized, and tokenized words US airline tweets and created a term frequency-inverse document frequency (TF-IDF) matrix. Split the data into testing/training sets and performed logistic regression. Yielded an overall 80% accuracy rate.</p>
+						</div>
+						<div class="buttonrow">
+							<div class ="tagrow">
+								<div class="projecttag">Python</div>
+								<div class="projecttag">NLTK</div>
+								<div class="projecttag">Sklearn</div>
+							</div>
+							<div class="projectbuttons">
+								<a class="fa fa-github" href="https://github.com/benjamin-dinh/tweet-sentiment-analysis/blob/main/tweet_sentiment_analysis.ipynb"></a>
+							</div>
+						</div>
+					</div>
+					<div class = projectSelect>
+						<div>
+							<h2>AggieFeed</h2>
+							<p class="subtitle_bold">An Android application that delivers the latest university news</p>
+							<p class="subtitle_date">JUNE 2020</p>
+							<p class="subtitle">Accessed a REST API to render university events, meetings, announcements, and important dates. Any element can be tapped on to show a more detailed view. Utilized OkHTTP requests and GSON data mapping. Strengthened understanding of Android concepts such as activities, fragments, and intents.</p>
+						</div>
+						<div class="buttonrow">
+							<div class ="tagrow">
+								<div class="projecttag">Kotlin</div>
+								<div class="projecttag">OkHTTP</div>
+								<div class="projecttag">GSON</div>
+							</div>
+							<div class="projectbuttons">
+								<a class="fa fa-github" href="https://github.com/benjamin-dinh/IETAndroidAppProject"></a>
+								<a class="fa fa-external-link-square" href="https://drive.google.com/file/d/1vH078U3TXIbzWwnw4dqZkSJPtS7ijEUe/view?usp=sharing"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class = projectSelect>
+						<div>
+							<h2>includedavis</h2>
+							<p class="subtitle_bold">A user focused redesign of #include's club website</p>
+							<p class="subtitle_date">AUGUST 2020</p>
+							<p class="subtitle">Communicated with the lead designer to understand necessary revisions to improve the usability, look, and feel of the old website. Worked with the back end director and achieved a new landing page, club calendar, testimonial section, and mobile responsivity.</p>
+						</div>
+						<div class="buttonrow">
+							<div class ="tagrow">
+								<div class="projecttag">HTML</div>
+								<div class="projecttag">CSS</div>
+								<div class="projecttag">NodeJS</div>
+							</div>
+							<div class="projectbuttons">
+								<a class="fa fa-github" href="https://github.com/benjamin-dinh/include-website"></a>
+								<a class="fa fa-external-link-square" href="https://include-website.herokuapp.com/"></a>
+							</div>
+						</div>
+					</div>
+					<div class = projectSelect>
+						<div>
+							<h2>UC Davis Yearbook</h2>
+							<p class="subtitle_bold">A place to virtually store memories for the Class of 2020</p>
+							<p class="subtitle_date">MAY 2020</p>
+							<p class="subtitle">Directed a group of 3 web developers in building a website where users can upload personal profiles onto a virtual yearbook. Developed wireframes and assessed the UI and UX for technical feasibility. Used React to make page components and learned how to employ states and props. </p>
+						</div>
+						<div class="buttonrow">
+							<div class ="tagrow">
+								<div class="projecttag">React</div>
+								<div class="projecttag">NodeJS</div>
+								<div class="projecttag">Figma</div>
+							</div>
+							<div class="projectbuttons">
+								<a class="fa fa-github" href="https://github.com/benjamin-dinh/ucdavis-yearbook"></a>
+								<a class="fa fa-external-link-square" href="hazel-boundless-yearbook.glitch.me"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="archive">
+			<p id = "projectSectionTitle">SOME MORE FUN PROJECTS</p>
+			<div id = "projectArchiveContainer">
+				<div class="acc">
+					<div class="projectArchive">
+						<div class="acc__title"><h2>Fruit Classification</h2><p class="subtitle_date">NOVEMBER 2020</p></div>
+						<div class="acc__panel">
+							<p class="subtitle">A model that predicts fruit names based on mass, width, height, and color. Used logistic regression and decision trees to build models. Plotted decision boundaries for each model for comparison and concluded that decision trees created better boundaries between apples, oranges, mandarins, and lemons. </p>
+							<div class="buttonrow">
+								<div class ="tagrow">
+									<div class="projecttag">Python</div>
+									<div class="projecttag">Sklearn</div>
+								</div>
+								<div class="projectbuttons">
+									<a class="fa fa-github" href="https://github.com/benjamin-dinh/fruit-classification/blob/main/fruit_classification.ipynb"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="projectArchive">
+						<div class="acc__title"><h2>IMDb Web Scraper</h2><p class="subtitle_date">OCTOBER 2020</p></div>
+						<div class="acc__panel">
+							<p class="subtitle">A program that scrapes the popular movie review site to analyze film ratings, genre popularity, and director popularity. Explored the data and learned how to deal with missing data with imputation. </p>
+							<div class="buttonrow">
+								<div class ="tagrow">
+									<div class="projecttag">Python</div>
+									<div class="projecttag">BeautifulSoup</div>
+								</div>
+								<div class="projectbuttons">
+									<a class="fa fa-github" href="https://github.com/benjamin-dinh/imdb-webscraper/blob/main/imdb_webscraper.ipynb"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="projectArchive">
+						<div class="acc__title"><h2>Museum Exhibit Display</h2><p class="subtitle_date">APRIL 2020</p></div>
+						<div class="acc__panel">
+							<p class="subtitle">A site for Stephen Kaltenbach's exhibit at the Manetti Shrem Museum.</p>
+							<div class = "buttonrow">
+								<div class ="tagrow">
+									<div class="projecttag">HTML</div>
+									<div class="projecttag">CSS</div>
+									<div class="projecttag">JavaScript</div>
+								</div>
+								<div class="projectbuttons">
+									<a class="fa fa-github" href="https://github.com/benjamin-dinh/museum-website"></a>
+									<a class="fa fa-external-link-square" href="shore-conscious-supply.glitch.me/"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+			  	</div>
+				<div class="acc">
+					<div class="projectArchive">
+						<div class="acc__title"><h2>Automobile Price Predictor</h2><p class="subtitle_date">OCTOBER 2020</p></div>
+						<div class="acc__panel">
+							<p class="subtitle">A model that predicts car prices based on attributes such as fuel-efficiency, horsepower, weight, etc. Looked at the 25 predictors and ran two models, one including and one excluding categorial variables. Deduced that the three most important variables were horsepower, wheel-base, and width. </p>
+							<div class = "buttonrow">
+								<div class ="tagrow">
+									<div class="projecttag">Python</div>
+									<div class="projecttag">Statsmodels</div>
+									<div class="projecttag">Sklearn</div>
+								</div>
+								<div class="projectbuttons">
+									<a class="fa fa-github" href="https://github.com/benjamin-dinh/automobile-price-regression/blob/main/regression_models.ipynb"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="projectArchive">
+						<div class="acc__title"><h2>Postcard Creator</h2><p class="subtitle_date">APRIL 2020</p></div>
+						<div class="acc__panel">
+							<p class="subtitle">A place to make postcards with autogenerated URLs for sharing purposes. Utilized a database to store user information and applied basic server-side communication.</p>
+							<div class="buttonrow">
+								<div class ="tagrow">
+									<div class="projecttag">HTML</div>
+									<div class="projecttag">CSS</div>
+									<div class="projecttag">JavaScript</div>
+									<div class="projecttag">NodeJS</div>
+									<div class="projecttag">SQLite3</div>
+								</div>
+								<div class="projectbuttons">
+									<a class="fa fa-github" href="https://github.com/benjamin-dinh/postcard-creator-v2"></a>
+									<a class="fa fa-external-link-square" href="foggy-climbing-carob.glitch.me/"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="projectArchive">
+						<div class="acc__title"><h2>Spellchecker</h2><p class="subtitle_date">FEBRUARY 2020</p></div>
+						<div class="acc__panel">
+							<p class="subtitle">An implementation of the trie data stucture to detect mispelled words. A trie dictionary is first created from clean text, such as a book. Then, input from other text can be passed into the trie to detect misspellings and predict intended words.</p>
+							<div class="buttonrow">
+								<div class ="tagrow">
+									<div class="projecttag">C++</div>
+								</div>
+								<div class="projectbuttons">
+									<a class="fa fa-github" href="https://github.com/benjamin-dinh/spellchecker-trie"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+			  	</div>
+			</div>	
+		</section>
 		
 		<section id="footer">
-			<div id="bottomicons">
+			<div id="bottomIcons">
 				<a href="https://www.linkedin.com/in/benjamin-dinh/" class="fa fa-linkedin"></a>
 				<a href="https://github.com/benjamin-dinh" class="fa fa-github"></a>
 				<a href="https://www.behance.net/benjamin-dinh" class="fa fa-behance"></a>
 				<a href="mailto:benjamindinh909@gmail.com" class="fa fa-envelope"></a>
 			</div>
-			<p>© 2020 Benjamin Dinh </p>
+			<p id ="footerFont">© 2020 Benjamin Dinh </p>
 		</section>
 
 		
+		<script src="script.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-	
+		 
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script>
+		$(".acc__panel").hide();
+		$(function() {
+		$('.acc__title').click(function(j) {
+			var dropDown = $(this).closest('.projectArchive').find('.acc__panel');
+			// $(this).closest('.acc').find('.acc__panel').not(dropDown).slideUp();
+			
+			if ($(this).hasClass('active')) {
+			$(this).removeClass('active');
+			} 
+			else {
+			$(this).closest('.acc').find('.acc__title.active').removeClass('active');
+			$(this).addClass('active');
+			}
+			dropDown.stop(false, true).slideToggle();
+			j.preventDefault();
+		});
+		});
+		</script>
     </body>
 </html>
