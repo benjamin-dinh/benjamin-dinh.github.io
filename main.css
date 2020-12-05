@@ -228,9 +228,9 @@ img{
 }
 #profileImage{
     display: flex;
+    align-self: center;
     padding: 20px;
     flex-shrink: 3;
-    
 }
 #profileText{
     max-width:90vw;
