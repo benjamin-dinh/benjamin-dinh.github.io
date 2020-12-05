@@ -228,10 +228,8 @@ img{
     max-width: 60vw;
 }
 #profileImage{
-    display: flex;
-    align-self: center;
+    margin:auto;
     padding: 20px;
-    
 }
 #profileText{
     max-width:90vw;
