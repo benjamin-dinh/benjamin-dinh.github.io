@@ -227,8 +227,9 @@ img{
    
 }
 #profileImage{
-    display: block;
+    display: flex;
     padding: 20px;
+    flex-shrink: 3;
     
 }
 #profileText{
