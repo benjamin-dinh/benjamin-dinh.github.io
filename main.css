@@ -88,8 +88,6 @@ h2 {
     font-size:20px;
 }
 #navigationContainer {
-    background-color: rgba(255, 255, 255,0.5);
-    backdrop-filter: blur(5px);
     position: fixed;
     top: 0;
     width: 100%;
@@ -266,6 +264,10 @@ img{
 
 /* DESKTOP AND TABLET STYLE */
 @media screen and (min-width: 750px) {
+    #navigationContainer {
+        background-color: rgba(255, 255, 255,0.5);
+        backdrop-filter: blur(5px);
+    }
     h1{
         font-size: 50px;
     }
