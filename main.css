@@ -217,8 +217,9 @@ h2 {
 #profileContainer{
     display:flex;
     flex-direction: column-reverse;
+    flex-shrink: 3;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     margin:auto;
     max-width: 85vw;
     padding-bottom: 50px;
@@ -230,7 +231,7 @@ img{
     display: flex;
     align-self: center;
     padding: 20px;
-    flex-shrink: 3;
+    
 }
 #profileText{
     max-width:90vw;
