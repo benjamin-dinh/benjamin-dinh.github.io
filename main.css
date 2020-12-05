@@ -218,13 +218,13 @@ h2 {
     flex-direction: column-reverse;
     justify-content: center;
     margin:auto;
-    max-width: 85vw;
+    
     padding-bottom: 50px;
 }
 img{
     border-radius: 500px;
     max-width: 50vw;
-    object-fit: contains;
+    object-fit: contain;
 }
 #profileImage{
     display: flex;
