@@ -223,7 +223,7 @@ h2 {
 }
 img{
     border-radius: 500px;
-    width: 50vw;
+    max-width: 50vw;
     object-fit: contains;
 }
 #profileImage{
