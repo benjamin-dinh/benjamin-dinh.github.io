@@ -41,7 +41,7 @@ h2 {
     font-weight:600;
     letter-spacing: 0.1rem;
 }
-.fa{
+.fab, .fas, .fa{
     color: rgba(0,0,0,.5);
     padding: 10px;
     cursor: pointer;
@@ -201,7 +201,7 @@ h2 {
 }
 .projectbuttons{
     color: #333;
-    font-size: 25px;
+    font-size: 20px;
     display:flex;
     flex-direction: row;
     align-self: flex-end;
@@ -360,9 +360,6 @@ img{
     .projecttag {
         font-size: 14px;
         margin:5px;
-    }
-    .projectbuttons{
-        font-size: 30px;
     }
     #projectArchiveContainer{
         flex-direction: row;
