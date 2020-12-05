@@ -13,7 +13,7 @@ window.addEventListener('scroll',(e)=>{
     }
 });
 
-window.addEventListener('click',(e)=>{
-  const name = document.querySelector('#navigationName');
+const name = document.querySelector('#navigationName');
+name.addEventListener('click',(e)=>{
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
