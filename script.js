@@ -12,3 +12,8 @@ window.addEventListener('scroll',(e)=>{
       arrow.style.display = 'block';
     }
 });
+
+window.addEventListener('click',(e)=>{
+  const name = document.querySelector('#navigationName');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
