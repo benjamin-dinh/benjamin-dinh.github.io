@@ -41,7 +41,7 @@ h2 {
     font-weight:600;
     letter-spacing: 0.1rem;
 }
-.fab, .fas, .fa{
+.fab, .fas, .fa-github, .fa-external-link-alt{
     color: rgba(0,0,0,.5);
     padding: 10px;
     cursor: pointer;
