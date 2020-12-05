@@ -64,8 +64,26 @@ h2 {
     font-size:18px;
     font-weight:300;
 }
+.increaseLineHeight{
+    line-height: 50px;
+}
+.hoverBold{
+    color: #333;
+}
+.hoverBold:hover{
+    color: rgba(0,0,0,.5) !important;
+}
+.circleShadow{
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);
+}
+#work{
+    display: block; 
+    position: relative; 
+    top: -150px; 
+    visibility: hidden;
+}
 
-/* MOBILE AND GENERAL STYLE */
+/* GENERAL AND MOBILE STYLE */
 h2 {
     font-size:20px;
 }
@@ -145,21 +163,6 @@ h2 {
     margin: 15px 15px 0px 15px;
     padding: 15px 15px 15px 15px;
 }
-/* .acc__title::after {
-      width: 8px;
-      height: 8px;
-      border-right: 1px solid #333;
-      border-bottom: 1px solid #333;
-      position: absolute;
-      right: 15px;
-      content: " ";
-      top: 40%;
-      transform: rotate(45deg);
-      transition: all 0.2s ease-in-out;
-}
-.acc__title.active::after {
-      transform: rotate(225deg);
-} */
 .acc__title{
     cursor:pointer;
 }
@@ -210,6 +213,30 @@ h2 {
     padding: 5px 10px 5px 10px;
     margin: 4px;
 }
+#profileContainer{
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin:auto;
+    max-width: 85vw;
+    padding-bottom: 50px;
+}
+img{
+    width: 50vw;
+    object-fit: cover;
+}
+#profileImage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+#profileText{
+    max-width:90vw;
+    text-align: left;
+    padding: 20px;
+    padding-top: 10px;
+}
 #rightIcons{
     position: fixed;
     right: 2vw;
@@ -237,7 +264,7 @@ h2 {
     font-size:16px;
 }
 
-/* DESKTOP AND TABLET SPECIFIC STYLE */
+/* DESKTOP AND TABLET STYLE */
 @media screen and (min-width: 750px) {
     h1{
         font-size: 50px;
@@ -335,8 +362,24 @@ h2 {
     h2{
         font-size: 25px;
     }
+    img{
+        width: 25vw;
+    }
+    #profileText{
+        width: 40vw;
+    }
+    #profileImage{
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top:30px;
+    }
+    #profileContainer{
+        max-width: 85vw;
+        flex-direction: row;
+    }
 }
 
+/* DESKTOP ONLY STYLE */
 @media screen and (min-width: 1400px) {
     #header{
         margin-left: 12vw;
@@ -348,12 +391,16 @@ h2 {
     #rightIcons{
         right: 2vw;
     }
+    #profileText{
+        width: 35vw;
+    }
+    #profileContainer{
+        flex-direction:row;
+    }
+    img{
+        width: 14vw;
+    }
 }
-
-
-
-
-
 
 
 /* ANIMATIONS */
@@ -385,5 +432,5 @@ h2 {
     60% {
       transform: translateY(-5px);
     }
-  }
+}
   
