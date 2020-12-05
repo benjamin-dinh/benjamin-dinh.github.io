@@ -4,6 +4,9 @@
 @import url("https://use.typekit.net/taw5ebb.css");
 
 /* GENERAL STYLE */
+* {
+    -webkit-overflow-scrolling: touch;
+}
 html{
     scroll-behavior: smooth;
 }
