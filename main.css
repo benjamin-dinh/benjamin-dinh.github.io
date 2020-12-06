@@ -166,6 +166,13 @@ h2 {
 }
 .acc__title{
     cursor:pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.dropdownArrow{
+    margin-top: -10px;
 }
 .acc__panel {
     display: flex;
@@ -379,6 +386,9 @@ img{
     #profileContainer{
         max-width: 80vw;
         flex-direction: row;
+    }
+    .dropdownArrow{
+        margin-top: 0px;
     }
 }
 
