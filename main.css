@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
 @import url("https://use.typekit.net/taw5ebb.css");
 
@@ -66,9 +66,10 @@ h2 {
     font-size:17px;
     font-weight:300;
 }
-.increaseLineHeight{
-    letter-spacing:0rem;
+.customsubtitle{
+    font-weight:300;
     line-height: 50px;
+    font-size: 20px;
 }
 .hoverBold{
     color: #333;
@@ -280,6 +281,9 @@ img{
     h1{
         font-size: 50px;
     }
+    h2{
+        font-size: 27px;
+    }
     .arrow{
         top: -10vh;
     }
@@ -369,9 +373,6 @@ img{
     }
     #projectArchiveContainer{
         flex-direction: row;
-    }
-    h2{
-        font-size: 27px;
     }
     img{
         width: 25vw;
