@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="main.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	
 		<title>Benjamin Dinh</title>
 		<link rel="icon" href="assets/faviconnew.png">
@@ -60,10 +61,10 @@
 		</div>
 		<a id="work"></a>
 		<section>
-			<p id = "projectSectionTitle">RECENTS</p>
+			<p id = "projectSectionTitle" data-aos="fade-up">RECENTS</p>
 			<div id="projectContainer">
 				<div class="row">
-					<div class = projectSelect>
+					<div class = "projectSelect" data-aos="fade-up">
 						<div>
 							<h2>Tweet Sentiment Analysis</h2>
 							<p class="subtitle_bold">An NLP model that classifies tweets based on polarity of opinion</p>
@@ -81,7 +82,7 @@
 							</div>
 						</div>
 					</div>
-					<div class = projectSelect>
+					<div class = "projectSelect" data-aos="fade-up">
 						<div>
 							<h2>AggieFeed</h2>
 							<p class="subtitle_bold">An Android application that delivers the latest university news</p>
@@ -101,7 +102,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class = projectSelect>
+					<div class = "projectSelect" data-aos="fade-up">
 						<div>
 							<h2>includedavis.com</h2>
 							<p class="subtitle_bold">A user focused redesign of #include's club website</p>
@@ -120,7 +121,7 @@
 							</div>
 						</div>
 					</div>
-					<div class = projectSelect>
+					<div class = "projectSelect" data-aos="fade-up">
 						<div>
 							<h2>UC Davis Yearbook</h2>
 							<p class="subtitle_bold">A place to virtually store memories for the Class of 2020</p>
@@ -143,10 +144,10 @@
 			</div>
 		</section>
 		<section id="archive">
-			<p id = "projectSectionTitle">MORE FUN PROJECTS</p>
+			<p id = "projectSectionTitle" data-aos="fade-up">MORE FUN PROJECTS</p>
 			<div id = "projectArchiveContainer">
 				<div class="acc">
-					<div class="projectArchive">
+					<div class="projectArchive" data-aos="fade-up">
 						<div class="acc__title">
 							<div>
 								<h2>Fruit Classification</h2>
@@ -169,7 +170,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="projectArchive">
+					<div class="projectArchive" data-aos="fade-up">
 						<div class="acc__title">
 							<div>
 								<h2>IMDb Web Scraper</h2>
@@ -192,7 +193,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="projectArchive">
+					<div class="projectArchive" data-aos="fade-up">
 						<div class="acc__title">
 							<div>
 								<h2>Museum Exhibit Display</h2>
@@ -219,7 +220,7 @@
 					</div>
 			  	</div>
 				<div class="acc">
-					<div class="projectArchive">
+					<div class="projectArchive" data-aos="fade-up">
 						<div class="acc__title">
 							<div>
 								<h2>Automobile Price Predictor</h2>
@@ -243,7 +244,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="projectArchive">
+					<div class="projectArchive" data-aos="fade-up">
 						<div class="acc__title">
 							<div>
 								<h2>Postcard Creator</h2>
@@ -270,7 +271,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="projectArchive">
+					<div class="projectArchive" data-aos="fade-up">
 						<div class="acc__title">
 							<div>
 								<h2>Spellchecker</h2>
@@ -297,8 +298,8 @@
 		</section>
 
 		<section id="about">
-			<p id = "projectSectionTitle">ABOUT ME</p>
-			<div id="profileContainer">
+			<p id = "projectSectionTitle" data-aos="fade-up">ABOUT ME</p>
+			<div id="profileContainer" data-aos="fade-up">
 				<div id="profileText">
 					<h2 class="customsubtitle">Nice to meet you!</h2>
 					<p class="subtitle">I'm Benjamin and I'm a third year at University of California, Davis studying Computer Science with an intended minor in Communications. My interests lie in making technology widely accessible and delivering unique product experiences.</p>
@@ -321,9 +322,12 @@
 			</div>
 			<p id ="footerFont">© 2020 Benjamin Dinh </p>
 		</section>
-
 		
 		<script src="script.js"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		<script>
