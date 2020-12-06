@@ -67,6 +67,7 @@ h2 {
     font-weight:300;
 }
 .increaseLineHeight{
+    letter-spacing:0rem;
     line-height: 50px;
 }
 .hoverBold{
