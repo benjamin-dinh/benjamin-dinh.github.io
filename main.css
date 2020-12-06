@@ -41,12 +41,14 @@ h2 {
     letter-spacing: 0.1rem;
 }
 .fa, .fab, .fas{
-    color: rgba(0,0,0,.5) !important;
+    color: rgba(0,0,0,.5);
     padding: 10px;
     cursor: pointer;
 }
+.fa-angle-down{
+    color: rgba(0,0,0,.2) 
+}
 .arrow {
-    color: rgba(0,0,0,.5);
     text-align: center;
     position: relative;
     top: -20vh;
