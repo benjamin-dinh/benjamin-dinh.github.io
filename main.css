@@ -84,6 +84,7 @@ h2 {
     box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);
 }
 .zoom:hover{
+    color: #333;
     transform: scale(1.15);
     transition: 0.1s;
 }
