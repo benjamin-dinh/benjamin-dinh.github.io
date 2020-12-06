@@ -46,7 +46,7 @@ h2 {
     cursor: pointer;
 }
 .fa-angle-down{
-    color: rgba(0,0,0,.2) 
+    color: rgba(0,0,0,.2);
 }
 .arrow {
     text-align: center;
@@ -184,6 +184,7 @@ h2 {
     align-items: center;
 }
 .dropdownArrow{
+    color: rgba(0,0,0,.5);
     margin-top: -10px;
 }
 .acc__panel {
