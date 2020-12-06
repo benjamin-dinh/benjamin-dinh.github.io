@@ -115,6 +115,9 @@ h2 {
     letter-spacing: 0.1rem;
     padding-left: 5px;
 }
+.navbar-light .navbar-nav .nav-link{
+    color:#333;
+}
 .navigationShadow {
     border-radius: 0px 0px 5px 5px;
     box-shadow: 0px 1px 10px #d6d6d6;
