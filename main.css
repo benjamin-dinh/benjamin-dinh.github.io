@@ -20,7 +20,7 @@ a {
     text-align: center;
     text-decoration: none !important;
 }
-a.hover{
+a:hover{
     color:#333;
 }
 b {
