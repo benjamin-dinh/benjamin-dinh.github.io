@@ -184,7 +184,7 @@ h2 {
 }
 .projectArchive:hover{
     /* background-color: rgb(255, 220, 200); */
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(255, 255, 235);
 }
 .buttonrow{
     display:flex;
