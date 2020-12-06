@@ -341,16 +341,15 @@
 			$('.acc__title').click(function(j) {
 				var dropDown = $(this).closest('.projectArchive').find('.acc__panel');
 				// $(this).closest('.acc').find('.acc__panel').not(dropDown).slideUp();
-				var arrow = $(this).closest('.projectArchive').find('.custom-down')
-
+				var arrow = $(this).find('.custom-down')
 				if ($(this).hasClass('active')) {
-				$(this).removeClass('active');
-				arrow.css({'transform' : 'rotate(0deg)'});
+					arrow.css({'transform' : 'rotate(0deg)','transition' : 'transform 0.5s'});
+					$(this).removeClass('active');
 				} 
 				else {
-				$(this).closest('.acc').find('.acc__title.active').removeClass('active');
-				$(this).addClass('active');
-				arrow.css({'transform' : 'rotate(180deg)','transition' : 'transform 0.5s'});
+					arrow.css({'transform' : 'rotate(180deg)','transition' : 'transform 0.5s'});
+					// $(this).closest('.acc').find('.acc__title.active').removeClass('active');
+					$(this).addClass('active');
 				}
 				dropDown.stop(false, true).slideToggle();
 				j.preventDefault();
