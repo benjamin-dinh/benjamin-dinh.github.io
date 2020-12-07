@@ -90,7 +90,7 @@ h2 {
     transform: scale(1.15);
     transition: 0.1s;
 }
-#work{
+#work, #about{
     display: block; 
     position: relative; 
     top: -150px; 
