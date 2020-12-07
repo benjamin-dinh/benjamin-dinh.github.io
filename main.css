@@ -90,10 +90,10 @@ h2 {
     transform: scale(1.15);
     transition: 0.1s;
 }
-#work{
+#work, #about{
     display: block; 
     position: relative; 
-    top: -140px; 
+    top: -100px; 
     visibility: hidden;
 }
 
@@ -402,6 +402,9 @@ img{
     }
     .dropdownArrow{
         margin-top: 0px;
+    }
+    #work, #about{
+        top: -150px; 
     }
 }
 
