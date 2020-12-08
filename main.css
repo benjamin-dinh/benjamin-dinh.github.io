@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
 @import url("https://use.typekit.net/taw5ebb.css");
 
@@ -16,7 +16,9 @@
     --shadow: #d6d6d6;
     --border: 2px;
     --boxshadow: 4px 4px 0 0 #333;
-    --bold: 600;
+    --bold:500;
+    --titlebold: 600;
+    --headerbold:300;
     --filter: none;
 }
 [data-theme="dark"] {
@@ -32,7 +34,9 @@
     --shadow: #000000B3;
     --border: 1px;
     --boxshadow: none;
-    --bold: 500;
+    --bold: 400;
+    --titlebold: 500;
+    --headerbold: 200;
     --filter: brightness(0.7);
 }
 
@@ -50,7 +54,7 @@ body {
 }
 a { 
     font-family: 'Poppins';
-    font-weight: 500;
+    font-weight: var(--bold);
     text-align: center;
     text-decoration: none !important;
 }
@@ -70,12 +74,12 @@ br {
 }
 h1{
     font-family: 'Poppins';
-    font-weight:300;
+    font-weight:var(--headerbold);
     font-size:35px;
 }
 h2 {
     font-family: 'Poppins';
-    font-weight: var(--bold);
+    font-weight: var(--titlebold);
     letter-spacing: 0.1rem;
 }
 .fa, .fab, .fas{
