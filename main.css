@@ -311,11 +311,12 @@ img{
     display:flex;
     flex-direction: column;
     font-size: 20px;
-    height: 35vh;
+    height: 350px;
     display:none;
 }
 #bottomIcons{
     padding-top: 20px;
+    padding-bottom: 15px;
     font-size: 22px;
 }
 #footer{
@@ -355,13 +356,6 @@ img{
         padding: 0;
         flex-direction: row;
         justify-content: center;
-    }
-    #bottomIcons{
-        display: none;
-    }
-    #rightIcons{
-        right: 1vw;
-        display: flex;
     }
     .vl{
         border-left: 1px solid var(--light);
@@ -477,6 +471,13 @@ img{
     }
     img{
         width: 14vw;
+    }
+    #bottomIcons{
+        display: none;
+    }
+    #rightIcons{
+        right: 1vw;
+        display: flex;
     }
 }
 
