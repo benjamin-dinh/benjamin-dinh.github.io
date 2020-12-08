@@ -17,6 +17,7 @@
     --border: 2px;
     --boxshadow: 4px 4px 0 0 #333;
     --bold: 600;
+    --filter: none;
 }
 [data-theme="dark"] {
     --main: #FFFFE0BF;
@@ -32,6 +33,7 @@
     --border: 1px;
     --boxshadow: none;
     --bold: 500;
+    --filter: brightness(0.7);
 }
 
 /* GENERAL STYLE */
@@ -283,6 +285,7 @@ h2 {
     padding-bottom: 50px;
 }
 img{
+    filter: var(--filter);
     max-width: 60vw;
 }
 #profileImage{
