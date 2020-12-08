@@ -338,6 +338,7 @@ img{
         background-color: var(--desktopnav);
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
+        -ms-backdrop-filter:blur(5px);
     }
     h1{
         font-size: 50px;
@@ -365,42 +366,8 @@ img{
         margin-left: 50%;
         top: 0;
     }
-    .categorytag {
-        color:var(--main);
-        letter-spacing: 0.1rem;
-        overflow: auto;
-        margin-left: 8px;
-        margin-right: 8px;
-        padding: 7px 15px 6px 15px !important;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        border-style: solid;
-        border-width: var(--border);
-        border-radius: 3px;
-        -webkit-transition: opacity 200ms ease, box-shadow 200ms ease-out, background-color 200ms ease-out, -webkit-transform 200ms ease-out;
-        transition: opacity 200ms ease, box-shadow 200ms ease-out, background-color 200ms ease-out, -webkit-transform 200ms ease-out;
-        transition: opacity 200ms ease, box-shadow 200ms ease-out, transform 200ms ease-out, background-color 200ms ease-out;
-        transition: opacity 200ms ease, box-shadow 200ms ease-out, transform 200ms ease-out, background-color 200ms ease-out, -webkit-transform 200ms ease-out;
-        -o-object-fit: fill;
-        object-fit: fill;
-    }
     a:hover{
         color: var(--main) !important;
-    }
-    .categorytag:hover {
-        box-shadow: 4px 4px 0 0 var(--main);
-        /* background-color: rgb(255, 220, 200); */
-        -webkit-transform: translate(-4px, -2px) skew(-4deg, -2deg);
-        transform: translate(-4px, -2px) skew(-4deg, -2deg);
     }
     #headertag{
         display: flex;
@@ -452,6 +419,41 @@ img{
 }
 
 /* DESKTOP ONLY STYLE */
+@media screen and (min-width: 990px) {
+    .categorytag {
+        color:var(--main);
+        letter-spacing: 0.1rem;
+        overflow: auto;
+        margin-left: 8px;
+        margin-right: 8px;
+        padding: 7px 15px 6px 15px !important;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border-style: solid;
+        border-width: var(--border);
+        border-radius: 3px;
+        -webkit-transition: opacity 200ms ease, box-shadow 200ms ease-out, background-color 200ms ease-out, -webkit-transform 200ms ease-out;
+        transition: opacity 200ms ease, box-shadow 200ms ease-out, background-color 200ms ease-out, -webkit-transform 200ms ease-out;
+        transition: opacity 200ms ease, box-shadow 200ms ease-out, transform 200ms ease-out, background-color 200ms ease-out;
+        transition: opacity 200ms ease, box-shadow 200ms ease-out, transform 200ms ease-out, background-color 200ms ease-out, -webkit-transform 200ms ease-out;
+        -o-object-fit: fill;
+        object-fit: fill;
+    }
+    .categorytag:hover {
+        box-shadow: 4px 4px 0 0 var(--main);
+        -webkit-transform: translate(-4px, -2px) skew(-4deg, -2deg);
+        transform: translate(-4px, -2px) skew(-4deg, -2deg);
+    }
+}
 @media screen and (min-width: 1400px) {
     #header{
         margin-left: 12vw;
