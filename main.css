@@ -527,6 +527,7 @@ img{
 .theme-switch-wrapper-mobile{
     position:absolute;
     right: 85px;
+    top: 14px;
 }
 .theme-switch input {
     display:none;
