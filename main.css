@@ -12,7 +12,7 @@
     --projectcolor1hover: rgb(245, 255, 190);
     --projectcolor2hover: rgb(255, 255, 235);
     --background: #ffffff;
-    --desktopnav:  rgba(255, 255, 255,0.5);
+    --desktopnav:  rgba(255, 255, 255,0.6);
     --shadow: #d6d6d6;
     --border: 2px;
     --boxshadow: 4px 4px 0 0 #333;
@@ -31,7 +31,7 @@
     --projectcolor1hover: #101010;
     --projectcolor2hover: #101010;
     --background: #111217;
-    --desktopnav:  #11121750;
+    --desktopnav:  #11121799;
     --shadow: #000000B3;
     --border: 1px;
     --boxshadow: none;
@@ -144,7 +144,11 @@ h2 {
     font-size:20px;
 }
 #navigationContainer {
-    background-color: var(--background);
+    /* background-color: var(--background); */
+    background-color: var(--desktopnav);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    -ms-backdrop-filter:blur(7px);
     position: fixed;
     top: 0;
     width: 100%;
@@ -334,12 +338,12 @@ img{
 
 /* DESKTOP AND TABLET STYLE */
 @media screen and (min-width: 750px) {
-    #navigationContainer {
+    /* #navigationContainer {
         background-color: var(--desktopnav);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-        -ms-backdrop-filter:blur(5px);
-    }
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        -ms-backdrop-filter:blur(10px);
+    } */
     h1{
         font-size: 50px;
     }
