@@ -1,11 +1,11 @@
+// NAVBAR SHADOW ON SCROLL
 window.addEventListener('scroll',(e)=>{
-
     // const main = getComputedStyle(document.body).getPropertyValue('--main');
     // const light = getComputedStyle(document.body).getPropertyValue('--light');
     const nav = document.querySelector('#navigationContainer');
-    const name = document.querySelector('#navigationName');
+    // const name = document.querySelector('#navigationName');
     const arrow = document.querySelector('.arrow');
-    const navbuttons = document.querySelectorAll('.navbar-light .navbar-nav .nav-link')
+    // const navbuttons = document.querySelectorAll('.navbar-light .navbar-nav .nav-link')
     if(window.pageYOffset>0){
       nav.classList.add("navigationShadow");
       // name.style.color = light;
@@ -23,6 +23,7 @@ window.addEventListener('scroll',(e)=>{
     }
 });
 
+// SCROLL TO TOP
 const name = document.querySelector('#navigationName');
 name.addEventListener('click',(e)=>{
   window.scrollTo({ top: 0, behavior: 'smooth' });

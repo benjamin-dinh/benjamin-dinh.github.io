@@ -19,7 +19,7 @@
 		<div id='navigationContainer'>
 			<nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light">
 				<a class="navbar-brand js-scroll-trigger" id="navigationName">Benjamin Dinh</a>
-				<div id="mobiletoggle"></div>
+				<div class="theme-switch-wrapper-mobile"></div>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -337,12 +337,14 @@
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		<script>
 		$(".acc__panel").hide();
-		if($(window).width()<=750){
-			$(".theme-switch").detach().appendTo('#mobiletoggle')
-		}
-		else{
-			$(".theme-switch").detach().appendTo('.theme-switch-wrapper')
-		}
+		$(window).resize(function() {
+			if($(window).width()<=750){
+				$(".theme-switch").detach().appendTo('.theme-switch-wrapper-mobile')
+			}
+			else{
+				$(".theme-switch").detach().appendTo('.theme-switch-wrapper')
+			}
+		});
 		$(function() {
 			$('.acc__title').click(function(j) {
 				var dropDown = $(this).closest('.projectArchive').find('.acc__panel');

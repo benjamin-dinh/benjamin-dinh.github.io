@@ -517,12 +517,16 @@ img{
     align-items: center;
     padding: 0 5px 0 10px;
 }
-.theme-switch, #mobiletoggle{
+.theme-switch, .theme-switch-wrapper-mobile{
     display: inline-block;
     height: 34px;
     position: relative;
     width: 60px;
     margin: auto;
+}
+.theme-switch-wrapper-mobile{
+    position:absolute;
+    right: 85px;
 }
 .theme-switch input {
     display:none;
