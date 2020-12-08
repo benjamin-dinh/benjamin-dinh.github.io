@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
 @import url("https://use.typekit.net/taw5ebb.css");
@@ -18,7 +18,7 @@
     --boxshadow: 4px 4px 0 0 #333;
     --bold:500;
     --titlebold: 600;
-    --headerbold:300;
+    --body:300;
     --filter: none;
 }
 [data-theme="dark"] {
@@ -36,7 +36,7 @@
     --boxshadow: none;
     --bold: 400;
     --titlebold: 500;
-    --headerbold: 200;
+    --body: 200;
     --filter: brightness(0.7);
 }
 
@@ -62,7 +62,7 @@ a:hover{
     color:var(--main);
 }
 b {
-    font-weight:600;
+    font-weight:var(--titlebold);
 }
 p { 
     color:var(--paragraph);
@@ -74,7 +74,7 @@ br {
 }
 h1{
     font-family: 'Poppins';
-    font-weight:var(--headerbold);
+    font-weight:var(--body);
     font-size:35px;
 }
 h2 {
@@ -98,7 +98,7 @@ h2 {
 }
 .subtitle{
     font-size:16px;
-    font-weight:300;
+    font-weight:var(--body);
 }
 .subtitle_bold{
     color: var(--main);
