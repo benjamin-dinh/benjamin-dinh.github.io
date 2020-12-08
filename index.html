@@ -19,7 +19,7 @@
 		<div id='navigationContainer'>
 			<nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light">
 				<a class="navbar-brand js-scroll-trigger" id="navigationName">Benjamin Dinh</a>
-				
+				<div id="mobiletoggle"></div>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -34,7 +34,7 @@
 						<li class="nav-item">
 							<a class="nav-link js-scroll-trigger categorytag" href="assets/BenjaminDinhResume.pdf">Resume</a>
 						</li>
-						<div class="theme-switch-wrapper desktoptoggle">
+						<div class="theme-switch-wrapper">
 							<label class="theme-switch" for="checkbox">
 								<input type="checkbox" id="checkbox" />
 								<div class="slider round"></div>
@@ -42,8 +42,6 @@
 						</div>
 					</ul>
 				</div>
-				
-				
 			</nav>
 		</div>
 		<div id="rightIcons">
@@ -339,6 +337,12 @@
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		<script>
 		$(".acc__panel").hide();
+		if($(window).width()<=750){
+			$(".theme-switch").detach().appendTo('#mobiletoggle')
+		}
+		else{
+			$(".theme-switch").detach().appendTo('.theme-switch-wrapper')
+		}
 		$(function() {
 			$('.acc__title').click(function(j) {
 				var dropDown = $(this).closest('.projectArchive').find('.acc__panel');

@@ -20,6 +20,7 @@
     --titlebold: 600;
     --body:300;
     --filter: none;
+    --invert: invert(0);
 }
 [data-theme="dark"] {
     --main: #FFFFE0BF;
@@ -38,6 +39,7 @@
     --titlebold: 500;
     --body: 200;
     --filter: brightness(0.7);
+    --invert: invert(1)
 }
 
 /* GENERAL STYLE */
@@ -159,11 +161,11 @@ h2 {
     padding-left: 2px;
     padding-right: 2px;
 }
-.theme-switch-wrapper{
-    display:none;
-}
 .navbar-light .navbar-nav .nav-link{
     color:var(--main);
+}
+.navbar-light .navbar-toggler{
+    filter: var(--invert);
 }
 .navigationShadow {
     border-radius: 0px 0px 5px 5px;
@@ -331,9 +333,6 @@ img{
 
 /* DESKTOP AND TABLET STYLE */
 @media screen and (min-width: 750px) {
-    .theme-switch-wrapper{
-        display:flex;
-    }
     #navigationContainer {
         background-color: var(--desktopnav);
         backdrop-filter: blur(5px);
@@ -514,16 +513,16 @@ img{
 
  /* DARK MODE TOGGLE */
 .theme-switch-wrapper {
+    display: flex;
     align-items: center;
-    padding-left: 10px;
-    padding-right: 5px;
+    padding: 0 5px 0 10px;
 }
-.theme-switch {
+.theme-switch, #mobiletoggle{
     display: inline-block;
     height: 34px;
     position: relative;
     width: 60px;
-    margin:auto;
+    margin: auto;
 }
 .theme-switch input {
     display:none;
