@@ -224,16 +224,14 @@ h2 {
     border-style: solid;
     border-width: var(--projectborder);
     border-radius: 3px;
-    margin: 15px 15px 0px 15px;
-    padding: 15px 15px 0px 15px;
+    margin: 18px 18px 0px 18px;
+    padding: 18px 18px 0px 18px;
     transition: transform .2s; 
 }
 .projectSelect{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 15px 15px 0px 15px;
-    padding: 15px 15px 15px 15px;
 }
 .acc__title{
     cursor:pointer;
