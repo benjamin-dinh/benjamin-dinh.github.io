@@ -16,9 +16,9 @@
     --shadow: #d6d6d6;
     --border: 2px;
     --boxshadow: 4px 4px 0 0 #333;
-    --bold:500;
+    --bold: 500;
     --titlebold: 600;
-    --body:300;
+    --body: 300;
     --filter: none;
     --invert: invert(0);
 }
