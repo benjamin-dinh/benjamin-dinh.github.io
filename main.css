@@ -108,6 +108,7 @@ h2 {
     font-weight: var(--bold);
 }
 .subtitle_date{
+    text-transform: uppercase;
     letter-spacing: 0.1rem;
     font-style:italic;
     font-size:17px;
@@ -196,7 +197,8 @@ h2 {
 #name{
     color: var(--main);
 }
-#projectSectionTitle{
+.projectSectionTitle{
+    text-transform: uppercase;
     text-align:center;
     font-style: italic;
     letter-spacing: 0.2rem;
