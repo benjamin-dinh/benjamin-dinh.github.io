@@ -15,6 +15,7 @@
     --desktopnav:  rgba(255, 255, 255,0.6);
     --shadow: #d6d6d6;
     --border: 2px;
+    --projectborder:2px;
     --boxshadow: 4px 4px 0 0 #333;
     --bold: 500;
     --titlebold: 600;
@@ -23,17 +24,19 @@
     --invert: invert(0);
 }
 [data-theme="dark"] {
-    --main: #FFFFE0BF;
-    --light:#FFFFE066;
-    --lighter: #FFFFE033;
-    --paragraph: #FFFFE099;
-    --projectcolor:#111217;
-    --projectcolor1hover: #101010;
-    --projectcolor2hover: #101010;
-    --background: #111217;
-    --desktopnav:  #11121799;
+    --main: #FFFFECCC;
+    /* --main: #FFFFE0CC; */
+    --light:#FFFFEC66;
+    --lighter: #FFFFEC33;
+    --paragraph: #FFFFECB6;
+    --projectcolor: #212121B3;
+    --projectcolor1hover:#262626;
+    --projectcolor2hover:#262626;
+    --background: #121212;
+    --desktopnav:  #12121299;
     --shadow: #000000B3;
     --border: 1px;
+    --projectborder:0px;
     --boxshadow: none;
     --bold: 400;
     --titlebold: 500;
@@ -219,7 +222,7 @@ h2 {
     width:85vw;
     background-color: var(--projectcolor);
     border-style: solid;
-    border-width: var(--border);
+    border-width: var(--projectborder);
     border-radius: 3px;
     margin: 15px 15px 0px 15px;
     padding: 15px 15px 0px 15px;
