@@ -254,7 +254,6 @@ h2 {
     text-align: left;
 }
 .projectSelect:hover, .projectArchive:hover{
-    box-shadow: var(--boxshadow);
     background-color: var(--projectcolor1hover);
     transform: scale(1.01);
 }
@@ -390,6 +389,9 @@ img{
         width: 39vw;
         margin: 20px 20px 20px 20px;
         padding: 20px 20px 10px 20px;
+    }
+    .projectSelect:hover, .projectArchive:hover{
+        box-shadow: var(--boxshadow);
     }
     .projecttag {
         font-size: 14px;
