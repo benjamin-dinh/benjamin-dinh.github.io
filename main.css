@@ -182,7 +182,6 @@ h2 {
 }
 #header{
     position:relative;
-    background-color: var(--background);
     display: flex;
     flex-direction: column;
     justify-content: center;
