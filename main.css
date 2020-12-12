@@ -100,7 +100,7 @@ h2 {
     text-align: center;
     position: absolute;
     bottom: 15vh;
-    z-index: 1;
+    z-index: 3;
 }
 .subtitle{
     font-size:16px;
