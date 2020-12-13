@@ -149,7 +149,6 @@ h2 {
     font-size:20px;
 }
 #navigationContainer {
-    /* background-color: var(--background); */
     background-color: var(--desktopnav);
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
