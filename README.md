@@ -1,8 +1,8 @@
 # Benjamin's Personal Website 
 
 ## Recent Additions
-- [X] Mobile Responsivity
-- [X] Collapsible Project Cards
-- [X] Social Media Icon Bar
-- [X] Dark Mode Toggle
-- [X] Dark Mode Accessibility Fixes
+- Mobile Responsivity
+- Collapsible Project Cards
+- Social Media Icon Bar
+- Dark Mode Toggle
+- Dark Mode Accessibility Fixes
