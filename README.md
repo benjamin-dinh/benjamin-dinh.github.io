@@ -2,7 +2,7 @@
 
 ## Recent Additions
 - [X] Mobile Responsivity
-- [X] Fixed Navbar
 - [X] Collapsible Project Cards
-- [X] Fixed Social Media Bar
+- [X] Social Media Icon Bar
 - [X] Dark Mode Toggle
+- [X] Dark Mode Accessibility Fixes
