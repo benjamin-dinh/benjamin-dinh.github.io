@@ -1,4 +1,4 @@
-// NAVBAR SHADOW ON SCROLL
+// NAVBAR SHADOW AND HIDE ARROW ON SCROLL
 window.addEventListener('scroll',(e)=>{
     // const main = getComputedStyle(document.body).getPropertyValue('--main');
     // const light = getComputedStyle(document.body).getPropertyValue('--light');
