@@ -126,9 +126,9 @@ h2 {
 .hoverBold{
     color: var(--main);
 }
-.hoverBold:hover{
+/* .hoverBold:hover{
     color: var(--light) !important;
-}
+} */
 .circleShadow{
     border-radius: 500px;
     box-shadow: 0px 3px 8px 0px var(--shadow);
