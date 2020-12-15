@@ -322,6 +322,7 @@ img{
     font-size: 20px;
     height: 350px;
     display:none;
+    z-index:3;
 }
 #bottomIcons{
     padding-top: 20px;
