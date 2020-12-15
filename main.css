@@ -53,6 +53,7 @@ html{
     scroll-behavior: smooth;
 }
 body {
+    overflow-x:hidden;
     position: relative;
     background-color: var(--background);
     font-family: 'Nunito Sans',sans-serif;
