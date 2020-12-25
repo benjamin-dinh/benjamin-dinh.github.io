@@ -23,12 +23,6 @@ window.addEventListener('scroll',(e)=>{
     }
 });
 
-// SCROLL TO TOP
-const name = document.querySelector('#navigationName');
-name.addEventListener('click',(e)=>{
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-
 // DARK THEME TOGGLER
 // credit to: https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
