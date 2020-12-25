@@ -337,22 +337,17 @@
 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		<script>
-		$(".acc__panel").hide();
-		if($(window).width()<=990){
-			$(".theme-switch").detach().appendTo('.theme-switch-wrapper-mobile')
-		}
-		else{
-			$(".theme-switch").detach().appendTo('.theme-switch-wrapper')
-		}
-		$(window).resize(function() {
-			if($(window).width()<=990){
-				$(".theme-switch").detach().appendTo('.theme-switch-wrapper-mobile')
-			}
-			else{
-				$(".theme-switch").detach().appendTo('.theme-switch-wrapper')
-			}
-		});
 		$(function() {
+			// COLLAPSE ACCORDION ON PAGE LOAD
+			$(".acc__panel").hide();
+			// MOVE DARK MODE TOGGLE 
+			if($(window).width()<=990){ $(".theme-switch").detach().appendTo('.theme-switch-wrapper-mobile') }
+			else{ $(".theme-switch").detach().appendTo('.theme-switch-wrapper') }
+			$(window).resize(function() {
+				if($(window).width()<=990){ $(".theme-switch").detach().appendTo('.theme-switch-wrapper-mobile') }
+				else{ $(".theme-switch").detach().appendTo('.theme-switch-wrapper') }
+			});
+			// ACCORDION FUNCTIONALITY
 			$('.acc__title').click(function(j) {
 				var dropDown = $(this).closest('.projectArchive').find('.acc__panel');
 				// $(this).closest('.acc').find('.acc__panel').not(dropDown).slideUp();
