@@ -466,7 +466,7 @@ img{
         margin:auto;
     }
     #headerText{
-        margin-right: 20vw;
+        width:65vw;
     }
     .projectArchive, .projectSelect{
         width: 32vw;
