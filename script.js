@@ -46,3 +46,6 @@ if (currentTheme) {
         toggleSwitch.checked = true;
     }
 }
+
+// YEAR UPDATE
+document.getElementById("year").innerHTML = new Date().getFullYear();
