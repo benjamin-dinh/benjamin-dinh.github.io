@@ -48,4 +48,7 @@ if (currentTheme) {
 }
 
 // YEAR UPDATE
-document.getElementById("year").innerHTML = new Date().getFullYear();
+window.onload = function(){
+  var date = new Date().getFullYear();
+  document.getElementById("year").innerHTML = date;
+}
