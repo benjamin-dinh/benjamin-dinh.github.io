@@ -340,6 +340,7 @@ img{
 }
 #footerFont{
     font-size:16px;
+    font-weight: var(--body);
 }
 
 /* DESKTOP AND TABLET STYLE */
