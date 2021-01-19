@@ -382,10 +382,6 @@ img{
     .projectSelect:hover, .projectArchive:hover{
         box-shadow: var(--boxshadow);
     }
-    .projecttag {
-        font-size: 14px;
-        margin:5px;
-    }
     #projectArchiveContainer{
         flex-direction: row;
     }
@@ -455,6 +451,10 @@ img{
         box-shadow: 4px 4px 0 0 var(--main);
         -webkit-transform: translate(-4px, -2px) skew(-4deg, -2deg);
         transform: translate(-4px, -2px) skew(-4deg, -2deg);
+    }
+    .projecttag {
+        font-size: 14px;
+        margin:5px;
     }
 }
 @media screen and (min-width: 1400px) {
