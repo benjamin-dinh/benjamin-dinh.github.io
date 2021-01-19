@@ -91,7 +91,7 @@ h2 {
 }
 .fa, .fab, .fas{
     color: var(--light);
-    padding: 10px;
+    padding: 12px;
     cursor: pointer;
 }
 .fa-angle-down{
@@ -127,9 +127,6 @@ h2 {
 .hoverBold{
     color: var(--main);
 }
-/* .hoverBold:hover{
-    color: var(--light) !important;
-} */
 .circleShadow{
     border-radius: 500px;
     box-shadow: 0px 3px 8px 0px var(--shadow);
@@ -143,6 +140,9 @@ h2 {
     position: relative; 
     visibility: hidden;
     top: -10vh;
+}
+a.desktop-only{
+    display:none;
 }
 
 /* GENERAL AND MOBILE STYLE */
@@ -314,15 +314,7 @@ img{
     padding-top: 10px;
 }
 #rightIcons{
-    position: fixed;
-    right: 2vw;
-    bottom: 0;
-    display:flex;
-    flex-direction: column;
-    font-size: 20px;
-    height: 350px;
     display:none;
-    z-index:3;
 }
 #bottomIcons{
     padding-top: 20px;
@@ -346,10 +338,7 @@ img{
 /* DESKTOP AND TABLET STYLE */
 @media screen and (min-width: 750px) {
     h1{
-        font-size: 50px;
-    }
-    h2{
-        font-size: 27px;
+        font-size: 45px;
     }
     .arrow{
         bottom: 5vh;
@@ -365,7 +354,7 @@ img{
         justify-content: center;
     }
     .vl{
-        border-left: 1px solid var(--light);
+        border-left: 1.5px solid var(--light);
         height: 20vh;
         margin-top:20px;
         margin-left: 50%;
@@ -422,6 +411,12 @@ img{
 
 /* DESKTOP ONLY STYLE */
 @media screen and (min-width: 990px) {
+    h1{
+        font-size: 52px;
+    }
+    h2{
+        font-size: 27px;
+    }
     #headertag{
         display: flex;
         margin-top:20px;
@@ -463,6 +458,9 @@ img{
     }
 }
 @media screen and (min-width: 1400px) {
+    a.desktop-only{
+        display:block;
+    }
     #header{
         margin:auto;
     }
@@ -471,9 +469,6 @@ img{
     }
     .projectArchive, .projectSelect{
         width: 32vw;
-    }
-    #rightIcons{
-        right: 2vw;
     }
     #profileText{
         width: 35vw;
@@ -489,8 +484,14 @@ img{
         display: none;
     }
     #rightIcons{
-        right: 1vw;
-        display: flex;
+        position: fixed;
+        bottom: 0;
+        right: 25px;
+        display:flex;
+        flex-direction: column;
+        font-size: 22px;
+        height: 350px;
+        z-index:5;
     }
 }
 
