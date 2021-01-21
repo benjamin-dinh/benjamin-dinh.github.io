@@ -25,7 +25,6 @@
 }
 [data-theme="dark"] {
     --main: #FFFFECCC;
-    /* --main: #FFFFE0CC; */
     --light:#FFFFEC66;
     --lighter: #FFFFEC33;
     --paragraph: #FFFFECBF;
@@ -259,7 +258,6 @@ h2 {
     transform: scale(1.03);
 }
 .projectArchive:hover{
-    /* background-color: rgb(255, 220, 200); */
     background-color: var(--projectcolor2hover);
 }
 .buttonrow{
