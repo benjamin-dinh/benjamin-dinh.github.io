@@ -303,6 +303,8 @@ img{
 }
 #profileImage{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     padding: 20px;
 }
@@ -384,16 +386,8 @@ img{
     #projectArchiveContainer{
         flex-direction: row;
     }
-    #profileText{
-        width: 45vw;
-    }
-    #profileImage{
-        flex-direction: column;
-        justify-content: flex-start;
-    }
     #profileContainer{
         max-width: 80vw;
-        flex-direction: row;
     }
     .dropdownArrow{
         margin-top: 0px;
@@ -451,8 +445,11 @@ img{
         font-size: 14px;
         margin:5px;
     }
-    #profileImage{
-        justify-content: center;
+    #profileText{
+        width: 55vw;
+    }
+    #profileContainer{
+        flex-direction:row;
     }
 }
 @media screen and (min-width: 1400px) {
@@ -469,11 +466,10 @@ img{
         width: 32vw;
     }
     #profileText{
-        width: 35vw;
+        width: 40vw;
     }
     #profileContainer{
-        max-width:55vw;
-        flex-direction:row;
+        max-width:60vw;
     }
     #bottomIcons{
         display: none;
