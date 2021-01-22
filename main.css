@@ -299,10 +299,11 @@ h2 {
 }
 img{
     filter: var(--filter);
-    max-width: 60vw;
+    max-width: 240px;
 }
 #profileImage{
-    margin:auto;
+    display: flex;
+    justify-content: center;
     padding: 20px;
 }
 #profileText{
@@ -383,16 +384,12 @@ img{
     #projectArchiveContainer{
         flex-direction: row;
     }
-    img{
-        width: 25vw;
-    }
     #profileText{
         width: 45vw;
     }
     #profileImage{
         flex-direction: column;
         justify-content: flex-start;
-        margin-top:30px;
     }
     #profileContainer{
         max-width: 80vw;
@@ -454,6 +451,9 @@ img{
         font-size: 14px;
         margin:5px;
     }
+    #profileImage{
+        justify-content: center;
+    }
 }
 @media screen and (min-width: 1400px) {
     a.desktop-only{
@@ -474,9 +474,6 @@ img{
     #profileContainer{
         max-width:55vw;
         flex-direction:row;
-    }
-    img{
-        width: 14vw;
     }
     #bottomIcons{
         display: none;
