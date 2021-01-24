@@ -1,11 +1,10 @@
-var rellax = new Rellax('.rellax');
-
 // NAVBAR SHADOW AND HIDE ARROW ON SCROLL
 window.addEventListener('scroll',(e)=>{
     // const main = getComputedStyle(document.body).getPropertyValue('--main');
     // const light = getComputedStyle(document.body).getPropertyValue('--light');
     const header = document.getElementById("headerText");
     header.style.opacity = 1 - window.pageYOffset/(window.innerHeight/1.7) +'';
+    header.style.transform = "translate3d(0px, " + window.pageYOffset/3 +"px, 0px)";
     const nav = document.querySelector('#navigationContainer');
     // const name = document.querySelector('#navigationName');
     const arrow = document.querySelector('.arrow');
