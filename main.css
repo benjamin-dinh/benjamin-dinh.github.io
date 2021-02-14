@@ -9,8 +9,8 @@
     --lighter: rgba(0,0,0,.2);
     --paragraph: #333;
     --projectcolor: #ffffff;
-    --projectcolor1hover: #f3f3f3;
-    --projectcolor2hover: #f3f3f3;
+    --projectcolor1hover: #f7f7f7;
+    --projectcolor2hover: #eeeeee;
     --background: #ffffff;
     --desktopnav:  rgba(255, 255, 255,0.6);
     --shadow: #d6d6d6;
@@ -30,7 +30,7 @@
     --lighter: #FFFFEC33;
     --paragraph: #FFFFECBF;
     --projectcolor: #1A1A1Acc;
-    --projectcolor1hover:#242424;
+    --projectcolor1hover:#1A1A1Acc;
     --projectcolor2hover:#242424;
     --background: #0A0A0A;
     --desktopnav:  #0A0A0A99;
@@ -257,12 +257,9 @@ h2 {
     text-align: left;
 }
 .projectSelect:hover, .projectArchive:hover{
-    background-color: var(--projectcolor1hover);
+    background-color: var(--projectcolor2hover);
     box-shadow: none;
     transform: scale(1.03);
-}
-.projectArchive:hover{
-    background-color: var(--projectcolor2hover);
 }
 .buttonrow{
     display:flex;
