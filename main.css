@@ -8,15 +8,16 @@
     --light: rgba(0,0,0,.5);
     --lighter: rgba(0,0,0,.2);
     --paragraph: #333;
-    --projectcolor: rgb(248, 248, 248);
-    --projectcolor1hover: rgb(245, 255, 190);
-    --projectcolor2hover: rgb(255, 255, 235);
+    --projectcolor: #ffffff;
+    --projectcolor1hover: #f3f3f3;
+    --projectcolor2hover: #f3f3f3;
     --background: #ffffff;
     --desktopnav:  rgba(255, 255, 255,0.6);
     --shadow: #d6d6d6;
     --border: 2px;
-    --projectborder:2px;
-    --boxshadow: 4px 4px 0 0 #333;
+    --projectborder:0px;
+    --boxshadow: 5px 5px 15px #d6d6d6;
+    --boxshadowextend: 5px 10px 15px #d6d6d6;
     --bold: 500;
     --titlebold: 600;
     --body: 300;
@@ -37,6 +38,7 @@
     --border: 1px;
     --projectborder:0px;
     --boxshadow: none;
+    --boxshadowextend: none;
     --bold: 400;
     --titlebold: 500;
     --body: 200;
@@ -177,7 +179,7 @@ h2 {
 }
 .navigationShadow {
     border-radius: 0px 0px 5px 5px;
-    box-shadow: 0px 1px 10px var(--shadow);
+    box-shadow: 0px 3px 10px var(--shadow);
 }
 #header{
     position:relative;
@@ -220,20 +222,21 @@ h2 {
 }
 .projectArchive, .projectSelect{
     width:85vw;
-    background-color: var(--projectcolor);
+    background-color: var(--projectcolor1hover);
     border-style: solid;
     border-width: var(--projectborder);
-    border-radius: 3px;
+    border-radius: 15px;
     margin: 15px 15px 0px 15px;
-    padding: 15px 15px 0px 15px;
+    padding: 20px 20px 5px 20px;
     transition: transform .2s; 
+    box-shadow: none;
 }
 .projectSelect{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 20px 15px 0px 15px;
-    padding: 15px 15px 10px 15px;
+    padding: 20px 20px 15px 20px;
 }
 .acc__title{
     cursor:pointer;
@@ -255,6 +258,7 @@ h2 {
 }
 .projectSelect:hover, .projectArchive:hover{
     background-color: var(--projectcolor1hover);
+    box-shadow: none;
     transform: scale(1.03);
 }
 .projectArchive:hover{
@@ -375,15 +379,20 @@ img{
         flex-direction: row;
     }
     .projectArchive , .projectSelect{
+        background-color: var(--projectcolor);
         width: 39vw;
-        margin: 20px 20px 20px 20px;
-        padding: 20px 20px 10px 20px;
+        box-shadow: var(--boxshadow);
     }
     .projectSelect{
-        padding: 20px 20px 20px 20px;
+        margin: 20px 20px 20px 20px;
+        padding: 25px 25px 25px 25px;
+    }
+    .projectArchive{
+        margin: 20px 20px 30px 20px;
+        padding: 25px 25px 10px 25px;
     }
     .projectSelect:hover, .projectArchive:hover{
-        box-shadow: var(--boxshadow);
+        box-shadow: var(--boxshadowextend);
     }
     #projectArchiveContainer{
         flex-direction: row;
