@@ -342,6 +342,9 @@ img{
     h1{
         font-size: 45px;
     }
+    #navigationContainer{
+        padding: 5px;
+    }
     .arrow{
         bottom: 5vh;
     }
