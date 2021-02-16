@@ -9,15 +9,13 @@
     --lighter: rgba(0,0,0,.2);
     --paragraph: #333;
     --projectcolor: #ffffff;
-    --projectcolor1hover: #f7f7f7;
-    --projectcolor2hover: #eeeeee;
+    --projectcolorhover: #ffffff;
     --background: #ffffff;
     --desktopnav:  rgba(255, 255, 255,0.6);
     --shadow: #d6d6d6;
     --border: 2px;
     --projectborder:0px;
-    --boxshadow: 5px 5px 15px #d6d6d6;
-    --boxshadowextend: 5px 10px 15px #d6d6d6;
+    --boxshadow: 5px 5px 15px #d7d7d7;
     --bold: 500;
     --titlebold: 600;
     --body: 300;
@@ -30,15 +28,13 @@
     --lighter: #FFFFEC33;
     --paragraph: #FFFFECBF;
     --projectcolor: #1A1A1Acc;
-    --projectcolor1hover:#1A1A1Acc;
-    --projectcolor2hover:#242424;
+    --projectcolorhover:#242424;
     --background: #0A0A0A;
     --desktopnav:  #0A0A0A99;
     --shadow: #000000;
     --border: 1px;
     --projectborder:0px;
     --boxshadow: none;
-    --boxshadowextend: none;
     --bold: 400;
     --titlebold: 500;
     --body: 200;
@@ -222,21 +218,24 @@ h2 {
 }
 .projectArchive, .projectSelect{
     width:85vw;
-    background-color: var(--projectcolor1hover);
+    background-color: var(--projectcolor);
     border-style: solid;
     border-width: var(--projectborder);
     border-radius: 15px;
-    margin: 15px 15px 0px 15px;
+    margin: 25px 15px 0px 15px;
     padding: 20px 20px 5px 20px;
     transition: transform .2s; 
-    box-shadow: none;
+    box-shadow: var(--boxshadow);
 }
 .projectSelect{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 20px 15px 0px 15px;
     padding: 20px 20px 15px 20px;
+}
+.projectSelect:hover, .projectArchive:hover{
+    background-color: var(--projectcolorhover);
+    transform: scale(1.02);
 }
 .acc__title{
     cursor:pointer;
@@ -255,11 +254,6 @@ h2 {
     justify-content: space-between;
     padding: 10px 0 10px 0px;
     text-align: left;
-}
-.projectSelect:hover, .projectArchive:hover{
-    background-color: var(--projectcolor2hover);
-    box-shadow: none;
-    transform: scale(1.03);
 }
 .buttonrow{
     display:flex;
@@ -343,7 +337,7 @@ img{
         font-size: 45px;
     }
     #navigationContainer{
-        padding: 5px;
+        padding: 3px;
     }
     .arrow{
         bottom: 5vh;
@@ -379,9 +373,7 @@ img{
         flex-direction: row;
     }
     .projectArchive , .projectSelect{
-        background-color: var(--projectcolor);
         width: 39vw;
-        box-shadow: var(--boxshadow);
     }
     .projectSelect{
         margin: 20px 20px 20px 20px;
@@ -390,9 +382,6 @@ img{
     .projectArchive{
         margin: 20px 20px 30px 20px;
         padding: 25px 25px 10px 25px;
-    }
-    .projectSelect:hover, .projectArchive:hover{
-        box-shadow: var(--boxshadowextend);
     }
     #projectArchiveContainer{
         flex-direction: row;
