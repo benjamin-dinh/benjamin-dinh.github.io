@@ -486,6 +486,18 @@ img{
     }
 }
 
+@media screen and (min-width: 2000px) {
+    h1{
+        font-size: 60px;
+    }
+    #headerText{
+        min-width: 56vw;
+    }
+    .projectArchive, .projectSelect{
+        width: 28vw;
+    }
+}
+
 /* ANIMATIONS */
 .fadein {
     animation: fadein 1s ease-in-out;
