@@ -345,6 +345,9 @@ img{
     .subtitle_bold{
         font-size:17px;
     }
+    #headerText{
+        min-width:65vw;
+    }
     #header{
         margin-left: 0;
         width: 100vw;
@@ -458,9 +461,6 @@ img{
     }
     #header{
         margin:auto;
-    }
-    #headerText{
-        width:65vw;
     }
     .projectArchive, .projectSelect{
         width: 32vw;
