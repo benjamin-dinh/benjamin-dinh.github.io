@@ -112,9 +112,9 @@ h2 {
 .subtitle_date{
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    font-style:italic;
     font-size:17px;
     font-weight:300;
+    color: var(--light);
 }
 .customsubtitle{
     font-weight:300;
