@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
 @import url("https://use.typekit.net/taw5ebb.css");
@@ -53,7 +54,7 @@ body {
     overflow-x:hidden;
     position: relative;
     background-color: var(--background);
-    font-family: 'Nunito Sans',sans-serif;
+    font-family: 'IBM Plex Sans',sans-serif;
     color: var(--main);
 }
 a { 
@@ -70,8 +71,9 @@ b {
 }
 p { 
     color:var(--paragraph);
-    font-size: 18px;
+    font-size: 15px;
     line-height: 22px;
+    letter-spacing: 0.05rem;
 }
 br {
     line-height: 50px;
@@ -101,7 +103,6 @@ h2 {
     z-index: 3;
 }
 .subtitle{
-    font-size:16px;
     font-weight:var(--body);
 }
 .subtitle_bold{
@@ -346,9 +347,6 @@ img{
     }
     .arrow{
         bottom: 5vh;
-    }
-    .subtitle_bold{
-        font-size:17px;
     }
     #headerText{
         min-width:65vw;
