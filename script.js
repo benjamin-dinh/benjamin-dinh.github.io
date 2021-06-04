@@ -5,19 +5,21 @@ window.addEventListener('scroll',(e)=>{
     const header = document.getElementById("headerText");
     header.style.opacity = 1 - window.pageYOffset/(window.innerHeight/1.7) +'';
     header.style.transform = "translate3d(0px, " + window.pageYOffset/3 +"px, 0px)";
-    const nav = document.querySelector('#navigationContainer');
+    const rightIcons = document.getElementById("rightIcons");
+    rightIcons.style.opacity = window.pageYOffset/(window.innerHeight/1.7) +'';
+    // const nav = document.querySelector('#navigationContainer');
     // const name = document.querySelector('#navigationName');
     const arrow = document.querySelector('.arrow');
     // const navbuttons = document.querySelectorAll('.navbar-light .navbar-nav .nav-link')
     if(window.pageYOffset>0){
-      nav.classList.add("navigationShadow");
+      // nav.classList.add("navigationShadow");
       // name.style.color = light;
       arrow.style.display = 'none';
       // for(var i =0; i<navbuttons.length ;i++){
       //   navbuttons[i].style.color= light;
       // }
     }else{
-      nav.classList.remove("navigationShadow");
+      // nav.classList.remove("navigationShadow");
       // name.style.color = main;
       arrow.style.display = 'block';
       // for(var i =0; i<navbuttons.length;i++){

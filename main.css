@@ -253,6 +253,7 @@ h2 {
 .dropdownArrow{
     color:var(--light);
     margin-top: -10px;
+    padding-left: 20px;
 }
 .acc__panel {
     display: flex;
@@ -357,13 +358,6 @@ img{
         padding: 0;
         flex-direction: row;
         justify-content: center;
-    }
-    .vl{
-        border-left: 1.5px solid var(--light);
-        height: 20vh;
-        margin-top:20px;
-        margin-left: 50%;
-        top: 0;
     }
     a:hover{
         color: var(--main) !important;
@@ -483,14 +477,18 @@ img{
     }
     #rightIcons{
         position: fixed;
-        bottom: 0;
-        right: 25px;
+        opacity: 0;
+        bottom: 30px;
+        left: 20px;
         display:flex;
         flex-direction: column;
         font-size: 22px;
-        height: 350px;
         z-index:5;
     }
+    #rightIcons a{
+        padding: 15px;
+    }
+
 }
 
 @media screen and (min-width: 2000px) {
