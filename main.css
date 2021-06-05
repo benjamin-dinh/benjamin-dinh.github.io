@@ -8,6 +8,7 @@
     --main: #333;
     --light: rgba(0,0,0,.5);
     --lighter: rgba(0,0,0,.2);
+    --lightest: #f7f7f7;
     --paragraph: #333;
     --projectcolor: #ffffff;
     --projectcolorhover: #ffffff;
@@ -27,6 +28,7 @@
     --main: #FFFFECCC;
     --light:#FFFFEC66;
     --lighter: #FFFFEC33;
+    --lightest: #151515;
     --paragraph: #FFFFECBF;
     --projectcolor: #1A1A1Acc;
     --projectcolorhover:#242424;
@@ -118,6 +120,19 @@ h2 {
     font-weight:300;
     color: var(--light);
 }
+.subtitle_about{
+    font-size: 17px;
+}
+.title_about{
+    text-transform: uppercase;
+    text-align:left;
+    font-style: normal;
+    letter-spacing: 0.2rem;
+    font-size: 20px;
+    font-weight: var(--titlebold);
+    padding-top: 10px;
+    line-height: 30px;
+}
 .hoverBold{
     color: var(--main);
 }
@@ -129,11 +144,14 @@ h2 {
     transform: scale(1.15);
     transition: 0.1s;
 }
-#work, #about{
+#work{
     display: block; 
     position: relative; 
     visibility: hidden;
     top: -10vh;
+}
+#about{
+    margin-top: 10vh;
 }
 a.desktop-only{
     display:none;
@@ -296,18 +314,40 @@ h2 {
     padding: 5px 10px 5px 10px;
     margin: 4px;
 }
-#profileContainer{
+.profileContainer{
     display:flex;
     flex-direction: column;
-    flex-shrink: 3;
     justify-content: center;
+    flex-shrink: 3;
     margin:auto;
     max-width: 85vw;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.images{
+    background-color: var(--lightest);
+    padding-top:70px;
+    padding-bottom:70px;
+}
+.imageContainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 85vw;
+    margin: auto;
+}
+#about{
     padding-bottom: 50px;
 }
-img{
+.about_image{
+    padding: 20px;
+    width: 75vw;
     filter: var(--filter);
-    max-width: 240px;
+}
+.headshot{
+    filter: var(--filter);
+    max-width: 300px;
 }
 #profileImage{
     display: flex;
@@ -316,7 +356,7 @@ img{
     justify-content: center;
     padding: 30px;
 }
-#profileText{
+.profileText{
     max-width:90vw;
     text-align: left;
     padding: 10px;
@@ -396,9 +436,16 @@ img{
     #projectArchiveContainer{
         flex-direction: row;
     }
-    #profileContainer{
+    .profileContainer{
+        max-width: 80vw;
+    }
+    .imageContainer{
         max-width: 80vw;
         flex-direction: row;
+    }
+    .about_image{
+        padding: 5px;
+        width: 25vw;
     }
     #profileImage{
         justify-content: flex-start;
@@ -413,6 +460,9 @@ img{
 
 /* DESKTOP ONLY STYLE */
 @media screen and (min-width: 990px) {
+    .profileContainer{
+        flex-direction: row;
+    }
     h1{
         font-size: 52px;
     }
@@ -463,9 +513,6 @@ img{
         font-size: 14px;
         margin:5px;
     }
-    #profileContainer{
-        flex-direction:row;
-    }
 }
 @media screen and (min-width: 1400px) {
     a.desktop-only{
@@ -483,8 +530,15 @@ img{
     .projectArchive, .projectSelect{
         width: 32vw;
     }
-    #profileContainer{
+    .profileContainer{
         max-width:65vw;
+    }
+    .imageContainer{
+        max-width: 65vw;
+    }
+    .about_image{
+        padding: 5px;
+        width: 20vw;
     }
     .projectSectionTitle{
         max-width: 65vw;
@@ -521,7 +575,7 @@ img{
     .projectArchive, .projectSelect{
         width: 28vw;
     }
-    #profileContainer{
+    .profileContainer{
         max-width:57vw;
     }
     .projectSectionTitle{
