@@ -329,8 +329,8 @@ h2 {
 }
 .images{
     background-color: var(--lightest);
-    padding-top:70px;
-    padding-bottom:70px;
+    padding-top:40px;
+    padding-bottom:40px;
 }
 .imageContainer{
     display:flex;
@@ -344,7 +344,8 @@ h2 {
     padding-bottom: 50px;
 }
 .about_image{
-    padding: 20px;
+    padding-top: 30px;
+    padding-bottom:30px;
     width: 75vw;
     filter: var(--filter);
 }
@@ -447,8 +448,13 @@ h2 {
         flex-direction: row;
     }
     .about_image{
-        padding: 5px;
+        padding-left: 5px;
+        padding-right:5px;
         width: 25vw;
+    }
+    .images{
+        padding-top:70px;
+        padding-bottom:70px;
     }
     #profileImage{
         justify-content: flex-start;
@@ -540,7 +546,6 @@ h2 {
         max-width: 65vw;
     }
     .about_image{
-        padding: 5px;
         width: 20vw;
     }
     .projectSectionTitle{
