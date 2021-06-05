@@ -286,6 +286,7 @@ h2 {
 }
 .projecttag {
     border-style:solid;
+    border-color: var(--light);
     border-width: 1px;
     border-radius: 40px;
     background-color: var(--projectcolor);
@@ -354,10 +355,10 @@ img{
         bottom: 5vh;
     }
     #headerText{
-        min-width:65vw;
+        min-width:79vw;
     }
     #headerSubText{
-        max-width: 65vw;
+        max-width: 79vw;
         font-size: 24px;
     }
     #header{
@@ -471,6 +472,12 @@ img{
     }
     #header{
         margin:auto;
+    }
+    #headerText{
+        min-width:64vw;
+    }
+    #headerSubText{
+        max-width: 64vw;
     }
     .projectArchive, .projectSelect{
         width: 32vw;
