@@ -9,14 +9,6 @@ window.addEventListener('scroll',(e)=>{
     document.getElementById("navigationContainer").style.transform = "translateY(-100%)";
   }
   prevScrollpos = currentScrollPos;
-  // hide arrow if not at the top of page
-  const arrow = document.querySelector('.arrow');
-  if(window.pageYOffset>0){
-    arrow.style.display = 'none';
-  }
-  else{
-    arrow.style.display = 'block';
-  }
 });
 
 // DARK THEME TOGGLER
