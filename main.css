@@ -322,7 +322,7 @@ h2 {
     margin:auto;
     max-width: 85vw;
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
 }
 .images{
     background-color: var(--lightest);
