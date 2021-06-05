@@ -10,9 +10,9 @@ window.addEventListener('scroll',(e)=>{
   leftIcons.style.opacity = window.pageYOffset/(window.innerHeight/1.7) +'';
   // hide navbar
   var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos || currentScrollPos ==0) {
+  if (prevScrollpos > currentScrollPos) {
     document.getElementById("navigationContainer").style.transform = "translateY(0)";
-  } else {
+  } else if (currentScrollPos != 0){
     document.getElementById("navigationContainer").style.transform = "translateY(-100%)";
   }
   prevScrollpos = currentScrollPos;
