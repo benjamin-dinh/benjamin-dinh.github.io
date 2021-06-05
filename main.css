@@ -452,10 +452,6 @@ h2 {
         padding-right:5px;
         width: 25vw;
     }
-    .images{
-        padding-top:70px;
-        padding-bottom:70px;
-    }
     #profileImage{
         justify-content: flex-start;
     }
