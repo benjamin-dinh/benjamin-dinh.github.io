@@ -86,6 +86,9 @@ h1{
     font-size:32px;
     letter-spacing: 0.05rem;
 }
+.inactive{
+    color: var(--light) !important;
+}
 h2 {
     font-family: 'Poppins';
     font-weight: var(--titlebold);
