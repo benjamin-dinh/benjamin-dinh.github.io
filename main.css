@@ -152,6 +152,7 @@ h2 {
     top: 0;
     width: 100%;
     z-index: 1;
+    transition: all 0.5s ease-in-out
 }
 #navigationName{
     color: var(--main);
@@ -321,7 +322,7 @@ img{
     padding: 10px;
     padding-top: 10px;
 }
-#rightIcons{
+#leftIcons{
     display:none;
 }
 #bottomIcons{
@@ -491,7 +492,7 @@ img{
     #bottomIcons{
         display: none;
     }
-    #rightIcons{
+    #leftIcons{
         position: fixed;
         opacity: 0;
         bottom: 30px;
@@ -501,7 +502,7 @@ img{
         font-size: 22px;
         z-index:5;
     }
-    #rightIcons a{
+    #leftIcons a{
         padding: 15px;
     }
 

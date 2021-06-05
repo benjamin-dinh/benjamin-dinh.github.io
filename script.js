@@ -1,31 +1,29 @@
 // NAVBAR SHADOW AND HIDE ARROW ON SCROLL
+var prevScrollpos = window.pageYOffset;
 window.addEventListener('scroll',(e)=>{
-    // const main = getComputedStyle(document.body).getPropertyValue('--main');
-    // const light = getComputedStyle(document.body).getPropertyValue('--light');
-    const header = document.getElementById("headerText");
-    header.style.opacity = 1 - window.pageYOffset/(window.innerHeight/1.7) +'';
-    header.style.transform = "translate3d(0px, " + window.pageYOffset/3 +"px, 0px)";
-    const rightIcons = document.getElementById("rightIcons");
-    rightIcons.style.opacity = window.pageYOffset/(window.innerHeight/1.7) +'';
-    // const nav = document.querySelector('#navigationContainer');
-    // const name = document.querySelector('#navigationName');
-    const arrow = document.querySelector('.arrow');
-    // const navbuttons = document.querySelectorAll('.navbar-light .navbar-nav .nav-link')
-    if(window.pageYOffset>0){
-      // nav.classList.add("navigationShadow");
-      // name.style.color = light;
-      arrow.style.display = 'none';
-      // for(var i =0; i<navbuttons.length ;i++){
-      //   navbuttons[i].style.color= light;
-      // }
-    }else{
-      // nav.classList.remove("navigationShadow");
-      // name.style.color = main;
-      arrow.style.display = 'block';
-      // for(var i =0; i<navbuttons.length;i++){
-      //   navbuttons[i].style.color= main;
-      // }
-    }
+  // parallax effect
+  const header = document.getElementById("headerText");
+  header.style.opacity = 1 - window.pageYOffset/(window.innerHeight/1.7) +'';
+  header.style.transform = "translate3d(0px, " + window.pageYOffset/3 +"px, 0px)";
+  // hide and show leftIcons
+  const leftIcons = document.getElementById("leftIcons");
+  leftIcons.style.opacity = window.pageYOffset/(window.innerHeight/1.7) +'';
+  // hide navbar
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navigationContainer").style.transform = "translateY(0)";
+  } else {
+    document.getElementById("navigationContainer").style.transform = "translateY(-100%)";
+  }
+  prevScrollpos = currentScrollPos;
+  // hide arrow if not at the top of page
+  const arrow = document.querySelector('.arrow');
+  if(window.pageYOffset>0){
+    arrow.style.display = 'none';
+  }
+  else{
+    arrow.style.display = 'block';
+  }
 });
 
 // DARK THEME TOGGLER
