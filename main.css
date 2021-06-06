@@ -655,9 +655,7 @@ h2 {
     top: 0;
     transition: .4s;
 }
-.slider:hover {
-    background-color: var(--light);
-}
+
 .slider:before {
     background-color: var(--background);
     bottom: 4px;
@@ -671,9 +669,6 @@ h2 {
 input:checked + .slider {
     background-color: var(--light);
 }
-input:checked + .slider:hover{
-    background-color: var(--main);
-}
 input:checked + .slider:before {
     transform: translateX(26px);
 }
@@ -682,4 +677,12 @@ input:checked + .slider:before {
 }
 .slider.round:before {
     border-radius: 50%;
+}
+@media screen and (min-width: 1400px) {
+    .slider:hover {
+        background-color: var(--light);
+    }
+    input:checked + .slider:hover{
+        background-color: var(--main);
+    }
 }
