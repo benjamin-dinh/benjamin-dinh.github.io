@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
 @import url("https://use.typekit.net/taw5ebb.css");
@@ -18,7 +18,7 @@
     --border: 2px;
     --projectborder:0px;
     --boxshadow: 5px 5px 15px #d7d7d7;
-    --bold: 500;
+    --bold: 400;
     --titlebold: 500;
     --body: 300;
     --filter: none;
@@ -38,7 +38,7 @@
     --border: 1px;
     --projectborder:0px;
     --boxshadow: none;
-    --bold: 400;
+    --bold: 300;
     --titlebold: 400;
     --body: 200;
     --filter: brightness(0.7);
@@ -61,7 +61,7 @@ body {
 }
 a { 
     font-family: 'Poppins';
-    font-weight: var(--bold);
+    font-weight: var(--titlebold);
     text-align: center;
     text-decoration: none !important;
 }
@@ -112,8 +112,9 @@ h2 {
     font-weight:var(--body);
 }
 .subtitle_bold{
+    font-family: 'Poppins';
     color: var(--main);
-    font-size:16px;
+    font-size:15px;
     font-weight: var(--bold);
 }
 .subtitle_date{
@@ -127,12 +128,12 @@ h2 {
     font-size: 17px;
 }
 .title_about{
+    font-family: 'IBM Plex Sans';
     text-transform: uppercase;
     text-align:left;
     font-style: normal;
     letter-spacing: 0.2rem;
     font-size: 20px;
-    font-weight: var(--titlebold);
     padding-top: 10px;
     line-height: 30px;
 }
@@ -183,10 +184,14 @@ h2 {
     cursor: pointer;
 }
 .nav-item{
-    letter-spacing: 0.05rem;
-    padding-left: 5px;
-    padding-right: 5px;
+    letter-spacing: 0.1rem;
+    padding-left: 10px;
+    padding-right: 10px;
     z-index: 3;
+}
+.nav-item a{
+    font-family: 'IBM Plex Sans';
+    font-weight: var(--titlebold);
 }
 .navbar-light .navbar-nav .nav-link{
     color:var(--main);
@@ -225,12 +230,12 @@ h2 {
     color: var(--main);
 }
 .projectSectionTitle{
+    font-family:'IBM Plex Sans';
     text-transform: uppercase;
     text-align:left;
     font-style: normal;
     letter-spacing: 0.2rem;
     font-size: 20px;
-    font-weight: var(--titlebold);
     margin: auto;
     max-width: 85vw;
     padding: 10px;
@@ -622,13 +627,14 @@ h2 {
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
-    padding: 0 5px 0 10px;
+    padding-left: 15px;
+    padding-right: 10px;
 }
 .theme-switch, .theme-switch-wrapper-mobile{
     display: inline-block;
-    height: 34px;
+    height: 30px;
     position: relative;
-    width: 60px;
+    width: 56px;
     margin: auto;
 }
 .theme-switch-wrapper-mobile{
@@ -640,7 +646,7 @@ h2 {
     display:none;
 }
 .slider {
-    background-color: #ccc;
+    background-color: var(--lighter);
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -649,18 +655,24 @@ h2 {
     top: 0;
     transition: .4s;
 }
+.slider:hover {
+    background-color: var(--light);
+}
 .slider:before {
-    background-color: #fff;
+    background-color: var(--background);
     bottom: 4px;
     content: "";
-    height: 26px;
+    height: 22px;
     left: 4px;
     position: absolute;
     transition: .4s;
-    width: 26px;
+    width: 22px;
 }
 input:checked + .slider {
-    background-color: #66bb6a;
+    background-color: var(--light);
+}
+input:checked + .slider:hover{
+    background-color: var(--main);
 }
 input:checked + .slider:before {
     transform: translateX(26px);
