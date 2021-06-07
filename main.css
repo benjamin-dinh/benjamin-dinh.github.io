@@ -155,7 +155,7 @@ h2 {
     top: -10vh;
 }
 #about{
-    margin-top: 10vh;
+    margin-top: 7vh;
 }
 a.desktop-only{
     display:none;
@@ -324,7 +324,7 @@ h2 {
 }
 .profileContainer{
     display:flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     flex-shrink: 3;
     margin:auto;
