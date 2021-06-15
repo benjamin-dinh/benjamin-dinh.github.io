@@ -138,6 +138,7 @@ h2 {
     line-height: 30px;
 }
 .hoverBold{
+    font-family: 'IBM Plex Sans';
     color: var(--main);
 }
 .circleShadow{
