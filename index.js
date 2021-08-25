@@ -5,9 +5,6 @@ window.addEventListener('scroll',(e)=>{
   const header = document.getElementById("headerText");
   header.style.opacity = 1 - window.pageYOffset/(window.innerHeight/1.7) +'';
   header.style.transform = "translate3d(0px, " + window.pageYOffset/3 +"px, 0px)";
-  // hide and show leftIcons
-  const leftIcons = document.getElementById("leftIcons");
-  leftIcons.style.opacity = window.pageYOffset/(window.innerHeight/1.7) +'';
   // hide navbar
   var currentScrollPos = window.pageYOffset;
   if (currentScrollPos <= 0 || prevScrollpos > currentScrollPos) {
