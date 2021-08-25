@@ -372,14 +372,6 @@ h2 {
     padding: 10px;
     padding-top: 10px;
 }
-#leftIcons{
-    display:none;
-}
-#bottomIcons{
-    padding-top: 20px;
-    padding-bottom: 15px;
-    font-size: 22px;
-}
 #footer{
     display: flex;
     justify-content: center;
@@ -554,19 +546,9 @@ h2 {
         max-width: 65vw;
     }
     #bottomIcons{
-        display: none;
-    }
-    #leftIcons{
-        position: fixed;
-        bottom: 30px;
-        left: 20px;
-        display:flex;
-        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 15px;
         font-size: 22px;
-        z-index:5;
-    }
-    #leftIcons a{
-        padding: 15px;
     }
 
 }
