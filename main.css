@@ -553,9 +553,9 @@ h2 {
     .projectSectionTitle{
         max-width: 65vw;
     }
-    #bottomIcons{
+    /* #bottomIcons{
         display: none;
-    }
+    } */
     #leftIcons{
         position: fixed;
         opacity: 0;
