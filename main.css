@@ -29,7 +29,7 @@
     --main: #FFFFECCC;
     --light:#FFFFEC66;
     --lighter: #FFFFEC33;
-    --navlighter:#FFFFEC33;
+    --navlighter:rgba(100,100,90);
     --lightest: #151515;
     --paragraph: #FFFFECBF;
     --projectcolor: #1A1A1Acc;
@@ -224,7 +224,7 @@ h2 {
 .toggler-icon {
     display: block;
     position: absolute;
-    height: 3px;
+    height: 2px;
     width: 100%;
     background: var(--navlighter);
     border-radius: 1px;
