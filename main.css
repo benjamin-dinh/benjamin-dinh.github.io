@@ -199,6 +199,7 @@ h2 {
 }
 .navbar-light .navbar-toggler-icon{
     filter: var(--invert);
+    -webkit-filter: var(--invert);
 }
 .navbar-light .navbar-toggler {
     border-color: var(--lighter) !important;
