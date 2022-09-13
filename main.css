@@ -89,6 +89,10 @@ h1{
 .inactive{
     color: var(--light) !important;
 }
+.navbar-toggler {
+    color: var(--light) !important;
+    border-color: var(--lighter) !important;
+}
 h2 {
     font-family: 'Poppins';
     font-weight: var(--titlebold);
