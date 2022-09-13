@@ -8,6 +8,7 @@
     --main: #333;
     --light: rgba(0,0,0,.5);
     --lighter: rgba(0,0,0,.2);
+    --navlighter: rgba(200,200,200);
     --lightest: #f7f7f7;
     --paragraph: #333;
     --projectcolor: #ffffff;
@@ -28,6 +29,7 @@
     --main: #FFFFECCC;
     --light:#FFFFEC66;
     --lighter: #FFFFEC33;
+    --navlighter:#FFFFEC33;
     --lightest: #151515;
     --paragraph: #FFFFECBF;
     --projectcolor: #1A1A1Acc;
@@ -197,13 +199,78 @@ h2 {
 .navbar-light .navbar-nav .nav-link{
     color:var(--main);
 }
-.navbar-light .navbar-toggler-icon{
-    filter: var(--invert);
-    -webkit-filter: var(--invert);
+.navbar-toggler {
+    width: 30px;
+    height: 20px;
+    margin-right: 5px;
+    position: relative;
+    transition: .5s ease-in-out;
 }
-.navbar-light .navbar-toggler {
-    border-color: var(--lighter) !important;
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    position: relative;
 }
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: var(--navlighter);
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+.middle-bar {
+    margin-top: 0px;
+}
+/* State when the navbar is collapsed */
+.navbar-toggler.collapsed .top-bar {
+    position: absolute;
+    top: 0px;
+    transform: rotate(0deg);
+}
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    position: absolute;
+    top: 8px;
+    filter: alpha(opacity=100);
+}
+.navbar-toggler.collapsed .bottom-bar {
+    position: absolute;
+    top: 16px;
+    transform: rotate(0deg);
+}
+/* when navigation is clicked */
+.navbar-toggler .top-bar {
+    top: inherit;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    top: inherit;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    top: inherit;
+    transform: rotate(-135deg);
+}
+
+
 .navigationShadow {
     border-radius: 0px 0px 5px 5px;
     box-shadow: 0px 3px 10px var(--shadow);
@@ -644,7 +711,7 @@ h2 {
 }
 .theme-switch-wrapper-mobile{
     position:absolute;
-    right: 85px;
+    right: 65px;
     top: 14px;
 }
 .theme-switch input {
