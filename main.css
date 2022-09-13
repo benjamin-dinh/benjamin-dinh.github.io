@@ -90,8 +90,10 @@ h1{
     color: var(--light) !important;
 }
 .navbar-toggler {
-    color: var(--light) !important;
     border-color: var(--lighter) !important;
+}
+.navbar-toggler-icon{
+    color: var(--light) !important;
 }
 h2 {
     font-family: 'Poppins';
