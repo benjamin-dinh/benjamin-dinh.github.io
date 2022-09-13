@@ -90,6 +90,7 @@ h1{
     color: var(--light) !important;
 }
 .navbar-toggler {
+    color: var(--light) !imporant;
     border-color: var(--lighter) !important;
 }
 .navbar-toggler-icon{
