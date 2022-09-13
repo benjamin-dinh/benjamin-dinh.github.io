@@ -42,7 +42,7 @@
     --titlebold: 400;
     --body: 200;
     --filter: brightness(0.7);
-    --invert: invert(1);
+    --invert: invert(100%);
 }
 
 /* GENERAL STYLE */
