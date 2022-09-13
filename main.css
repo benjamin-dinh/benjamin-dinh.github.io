@@ -89,13 +89,6 @@ h1{
 .inactive{
     color: var(--light) !important;
 }
-.navbar-toggler {
-    color: var(--light) !important;
-    border-color: var(--lighter) !important;
-}
-.navbar-toggler-icon{
-    color: var(--light) !important;
-}
 h2 {
     font-family: 'Poppins';
     font-weight: var(--titlebold);
@@ -204,8 +197,11 @@ h2 {
 .navbar-light .navbar-nav .nav-link{
     color:var(--main);
 }
-.navbar-light .navbar-toggler{
+.navbar-light .navbar-toggler-icon{
     filter: var(--invert);
+}
+.navbar-light .navbar-toggler {
+    border-color: var(--lighter) !important;
 }
 .navigationShadow {
     border-radius: 0px 0px 5px 5px;
